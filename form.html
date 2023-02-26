@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="form.html">Form Json</a>
+      </nav>
+    </header>
+    <main>
+      <form method="POST" action="http://localhost:3000/profile">
+
+        <fieldset>
+          <legend>Type text</legend>
+          <div>
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" name="firstName">
+          </div>
+          <div>
+           <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" name="lastName">
+          </div>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Type radio</legend>
+          <div>
+            <input type="radio" id="radio01" name="radio" value="radio01"
+                   checked>
+            <label for="radio01">radio 01</label>
+          </div>
+          <div>
+            <input type="radio" id="radio02" name="radio" value="radio02">
+            <label for="radio02">radio 02</label>
+          </div>
+          <div>
+            <input type="radio" id="radio03" name="radio" value="radio03">
+            <label for="radio03">radio 03</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Type checkbox</legend>
+            <div>
+              <input type="checkbox" id="checkbox01" name="checkbox 01">
+              <label for="checkbox01">checkbox 01</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox02" name="checkbox 02">
+              <label for="checkbox02">checkbox 02</label>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox03" name="checkbox 03">
+              <label for="checkbox03">checkbox 03</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Type select</legend>
+          <label for="select">Choose a select:</label>
+          <select name="select" id="select">
+              <option value="select01">select 01</option>
+              <option value="select02">select 02</option>
+              <option value="select03">select 03</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit form</button>
+      </form>
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
